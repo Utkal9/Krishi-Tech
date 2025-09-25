@@ -1,0 +1,27 @@
+{
+  "name": "krishi-tech",
+  "version": "1.0.0",
+  "description": "Smart India Hackathon Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dibyajyoti-13/Krishi-Tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dibyajyoti-13/Krishi-Tech/issues"
+  },
+  "homepage": "https://github.com/Dibyajyoti-13/Krishi-Tech#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "react": "^19.1.1",
+    "react-router-dom": "^7.9.2",
+    "tailwindcss": "^4.1.13"
+  }
+}
