@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const MarketInsights = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default MarketInsights
-=======
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -580,4 +567,3 @@ const MarketInsights: React.FC<MarketInsightsProps> = ({ onBack }) => {
 };
 
 export default MarketInsights;
->>>>>>> fc981b162b50e4f87f28ee5f2369ecf6b40d9342

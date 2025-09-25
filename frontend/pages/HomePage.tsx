@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const HomePage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default HomePage
-=======
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -500,4 +487,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
->>>>>>> arjun
+

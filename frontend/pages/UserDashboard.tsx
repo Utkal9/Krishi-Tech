@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const UserDashboard = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default UserDashboard
-=======
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useLanguage, languages } from '../contexts/LanguageContext';
@@ -462,4 +449,3 @@ const UserDashboard: React.FC = () => {
 };
 
 export default UserDashboard;
->>>>>>> arjun

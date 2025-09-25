@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
 
-const Login = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Login
-=======
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
@@ -201,4 +189,4 @@ const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
 };
 
 export default Login;
->>>>>>> arjun
+
