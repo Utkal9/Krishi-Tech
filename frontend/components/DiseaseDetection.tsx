@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const DiseaseDetection = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default DiseaseDetection
-=======
 import React, { useState } from "react";
 import { Upload, Image, Spin, Alert, Button, message } from "antd";
 import { UploadOutlined, ReloadOutlined } from "@ant-design/icons";
@@ -214,4 +201,3 @@ const DiseaseDetection: React.FC = () => {
 };
 
 export default DiseaseDetection;
->>>>>>> fc981b162b50e4f87f28ee5f2369ecf6b40d9342
