@@ -439,7 +439,7 @@ const HomePage: React.FC = () => {
                                 {/* Placeholder image logic remains the same */}
                                 <img
                                     className="h-40 w-40 object-cover mx-auto mb-3 rounded-lg"
-                                    src="/plant-placeholder.png"
+                                    src="/assets/Healthy-vs-diseased.jpeg"
                                     alt="Plant disease detection"
                                     width={160}
                                     height={160}
