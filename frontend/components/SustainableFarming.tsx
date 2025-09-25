@@ -73,6 +73,9 @@ const AccordionCard: FC<CardProps> = ({
 const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
     const navigate = useNavigate();
 
+    const handleClick = () => {
+        navigate('/sustainable-farming/welfare-schemes');
+    };
     // Placeholder for loading state, similar to a data-driven component
     const [isLoading, setIsLoading] = useState(true);
 
@@ -201,6 +204,11 @@ const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
                                 </p>
                             </div>
                         </div>
+                    <div>
+                        <button className="p-2 rounded-xl text-white bg-green-400" onClick={handleClick}>
+                            <p>Welfare Schemes</p>
+                        </button>
+                    </div>
                     </div>
                 </div>
             </div>

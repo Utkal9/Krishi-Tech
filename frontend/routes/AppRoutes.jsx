@@ -11,6 +11,7 @@ import CropRecommendation from "../components/CropRecommendation";
 import MarketInsights from "../components/MarketInsights";
 import DiseaseDetection from "../components/DiseaseDetection";
 import SustainableFarming from "../components/SustainableFarming";
+import Welfare from "../components/Welfare";
 import Footer from "../components/Footer";
 import { User } from "lucide-react";
 
@@ -40,6 +41,10 @@ const AppRoutes = () => {
                 <Route
                     path="/disease-detection"
                     element={<DiseaseDetection />}
+                />
+                <Route
+                    path="/sustainable-farming/welfare-schemes"
+                    element={<Welfare />}
                 />
 
                 {/* Default Fallback */}
