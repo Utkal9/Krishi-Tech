@@ -121,7 +121,9 @@
         "market_insights_title": "Market Insights",
         "market_insights_desc": "Current prices and market trends",
         "disease_detection_title": "Disease Detection",
-        "disease_detection_desc": "Identify plant diseases from images"
+        "disease_detection_desc": "Identify plant diseases from images",
+        "sustainable_farming_title": "Sustainable Farming",
+        "sustainable_farming_desc": "Practices and tools for a healthier farm"
     },
     "farming_tips": {
         "irrigation_title": "Optimal Irrigation Timing",
@@ -134,6 +136,7 @@
         "rotation_content": "Rotate crops annually to prevent soil depletion and reduce pest problems.",
         "rotation_category": "Crop Management"
     },
+
     "weather": {
         "humidity": "Humidity:",
         "wind": "Wind:",
@@ -185,5 +188,6 @@
         "chalk": "Chalk"
     },
     "cancel": "Cancel",
-    "logout": "Logout"
+    "logout": "Logout",
+    "todays_farming_tips": "Today's Farming Tips"
 }
