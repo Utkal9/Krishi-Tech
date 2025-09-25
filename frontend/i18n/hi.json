@@ -1,6 +1,6 @@
 {
     "app": {
-        "title": "क्रॉपवाइज़",
+        "title": "कृषि-टेक",
         "subtitle": "स्मार्ट फार्मिंग सॉल्यूशंस"
     },
     "login": {
@@ -151,7 +151,9 @@
         "market_insights_title": "बाजार की जानकारी",
         "market_insights_desc": "वर्तमान मूल्य और बाजार के रुझान",
         "disease_detection_title": "रोग का पता लगाना",
-        "disease_detection_desc": "छवियों से पौधों के रोगों की पहचान करें"
+        "disease_detection_desc": "छवियों से पौधों के रोगों की पहचान करें",
+        "sustainable_farming_title": "धारणीय कृषि",
+        "sustainable_farming_desc": "एक स्वस्थ खेत के लिए प्रथाएं और उपकरण"
     },
     "farming_tips": {
         "irrigation_title": "इष्टतम सिंचाई समय",
@@ -172,5 +174,6 @@
     "errors": {
         "weather_load_failed": "मौसम डेटा लोड करने में विफल",
         "tip_load_failed": "कृषि सुझाव लोड करने में विफल"
-    }
+    },
+    "todays_farming_tips": "आज के कृषि सुझाव"
 }

@@ -10,34 +10,46 @@ import WeatherForecast from "../components/WeatherForecast";
 import CropRecommendation from "../components/CropRecommendation";
 import MarketInsights from "../components/MarketInsights";
 import DiseaseDetection from "../components/DiseaseDetection";
+import SustainableFarming from "../components/SustainableFarming";
 import Footer from "../components/Footer";
+import { User } from "lucide-react";
 
 const AppRoutes = () => {
-  return (
-    <Router>
-      <Routes>
-        {/* Auth Pages */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+    return (
+        <Router>
+            <Routes>
+                {/* Auth Pages */}
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
 
-        {/* Dashboard */}
-        <Route path="/dashboard" element={<UserDashboard />} />
+                {/* Dashboard */}
+                <Route path="/dashboard" element={<UserDashboard />} />
 
-        {/* Feature Pages */}
-        <Route path="/soil-analysis" element={<SoilAnalysis />} />
-        <Route path="/weather" element={<WeatherForecast />} />
-        <Route path="/crop-recommendation" element={<CropRecommendation />} />
-        <Route path="/market-insights" element={<MarketInsights />} />
-        <Route path="/disease-detection" element={<DiseaseDetection />} />
+                {/* Feature Pages */}
+                <Route path="/soil-analysis" element={<SoilAnalysis />} />
+                <Route path="/weather" element={<WeatherForecast />} />
+                <Route
+                    path="/crop-recommendation"
+                    element={<CropRecommendation />}
+                />
+                <Route path="/market-insights" element={<MarketInsights />} />
+                <Route
+                    path="/sustainable-farming"
+                    element={<SustainableFarming />}
+                />
+                <Route
+                    path="/disease-detection"
+                    element={<DiseaseDetection />}
+                />
 
-        {/* Default Fallback */}
-        <Route path="*" element={<Login />} />
-      </Routes>
+                {/* Default Fallback */}
+                <Route path="*" element={<Login />} />
+            </Routes>
 
-      {/* Common Footer */}
-      <Footer />
-    </Router>
-  );
+            {/* Common Footer */}
+            <Footer />
+        </Router>
+    );
 };
 
 export default AppRoutes;

@@ -11,6 +11,7 @@ import WeatherForecast from "./components/WeatherForecast";
 import CropRecommendation from "./components/CropRecommendation";
 import MarketInsights from "./components/MarketInsights";
 import DiseaseDetection from "./components/DiseaseDetection";
+import SustainableFarming from "./components/SustainableFarming";
 
 function AppContent() {
     const { currentUser, farmerProfile, loading } = useAuth();
@@ -52,9 +53,16 @@ function AppContent() {
             <Route path="/profile" element={<UserDashboard />} />
             <Route path="/soil-analysis" element={<SoilAnalysis />} />
             <Route path="/weather" element={<WeatherForecast />} />
-            <Route path="/recommendations" element={<CropRecommendation />} />
+            <Route
+                path="/crop-recommendation"
+                element={<CropRecommendation />}
+            />
             <Route path="/market-insights" element={<MarketInsights />} />
             <Route path="/disease-detection" element={<DiseaseDetection />} />
+            <Route
+                path="/sustainable-farming"
+                element={<SustainableFarming />}
+            />
             <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
     );

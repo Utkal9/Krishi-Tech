@@ -4,8 +4,10 @@ import { useAuth } from "../contexts/AuthContext";
 import { useLanguage, languages } from "../contexts/LanguageContext";
 import { getFarmingTip } from "../services/geminiService";
 import { getCurrentWeather } from "../services/weatherService";
+
 import Footer from "../components/Footer";
 import FloatingChatBot from "../components/FloatingChatBot";
+
 import {
     Sprout,
     Cloud,
@@ -155,6 +157,15 @@ const HomePage: React.FC = () => {
             bgColor: "bg-red-50",
             iconColor: "text-red-600",
             path: "/disease-detection",
+        },
+        {
+            title: t("quick_actions.sustainable_farming_title"),
+            description: t("quick_actions.sustainable_farming_desc"),
+            icon: Leaf,
+            color: "from-teal-500 to-cyan-500",
+            bgColor: "bg-teal-50",
+            iconColor: "text-teal-600",
+            path: "/sustainable-farming",
         },
     ];
 
