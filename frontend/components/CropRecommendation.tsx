@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-import React, { useState, useEffect } from "react";
-const CropRecommendation = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default CropRecommendation
-=======
 import React, { useState } from "react";
 
 const CropPrediction: React.FC = () => {
@@ -177,4 +165,3 @@ const CropPrediction: React.FC = () => {
 };
 
 export default CropPrediction;
->>>>>>> arjun
