@@ -296,8 +296,45 @@ const HomePage: React.FC = () => {
                     </p>
                 </div>
 
+
+                {/* Quick Actions */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    {quickActions.map((action, index) => (
+                        <div
+                            key={index}
+                            className="group cursor-pointer transform hover:scale-105 transition-all duration-200"
+                            onClick={() => navigate(action.path)}
+                        >
+                            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl border border-gray-100">
+                                <div className="flex items-start space-x-4">
+                                    <div
+                                        className={`${action.bgColor} p-3 rounded-xl group-hover:scale-110 transition-transform`}
+                                    >
+                                        <action.icon
+                                            className={`h-8 w-8 ${action.iconColor}`}
+                                        />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                                            {action.title}
+                                        </h3>
+                                        <p className="text-gray-600 mb-4">
+                                            {action.description}
+                                        </p>
+                                        <div
+                                            className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${action.color} text-white rounded-lg text-sm font-medium group-hover:shadow-lg transition-shadow`}
+                                        >
+                                            {t("homepage.get_started")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
                 {/* Today's Farming Tip */}
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl shadow-lg p-6 mb-8 border border-green-100">
+                <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border border-green-100">
                     <div className="flex items-center mb-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -361,42 +398,6 @@ const HomePage: React.FC = () => {
                         </svg>
                         <span>{t("homepage.ai_generated_tip")}</span>
                     </div>
-                </div>
-
-                {/* Quick Actions */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    {quickActions.map((action, index) => (
-                        <div
-                            key={index}
-                            className="group cursor-pointer transform hover:scale-105 transition-all duration-200"
-                            onClick={() => navigate(action.path)}
-                        >
-                            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl border border-gray-100">
-                                <div className="flex items-start space-x-4">
-                                    <div
-                                        className={`${action.bgColor} p-3 rounded-xl group-hover:scale-110 transition-transform`}
-                                    >
-                                        <action.icon
-                                            className={`h-8 w-8 ${action.iconColor}`}
-                                        />
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                                            {action.title}
-                                        </h3>
-                                        <p className="text-gray-600 mb-4">
-                                            {action.description}
-                                        </p>
-                                        <div
-                                            className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${action.color} text-white rounded-lg text-sm font-medium group-hover:shadow-lg transition-shadow`}
-                                        >
-                                            {t("homepage.get_started")}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
                 </div>
 
                 {/* Disease Detection Section */}
