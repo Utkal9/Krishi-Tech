@@ -13,6 +13,7 @@ import MarketInsights from "./components/MarketInsights";
 import DiseaseDetection from "./components/DiseaseDetection";
 import SustainableFarming from "./components/SustainableFarming";
 import Welfare from "./components/Welfare";
+import WelfareSchemesPage from "./components/WelfareSchemesPage";
 
 function AppContent() {
     const { currentUser, farmerProfile, loading } = useAuth();
@@ -69,10 +70,7 @@ function AppContent() {
                 path="/sustainable-farming/welfare-schemes"
                 element={<Welfare />}
             />
-            <Route
-                path="/sustainable-farming/welfare-schemes"
-                element={<Welfare />}
-            />
+            <Route path="/schemes-list" element={<WelfareSchemesPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
     );
