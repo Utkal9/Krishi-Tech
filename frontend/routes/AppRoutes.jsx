@@ -13,6 +13,7 @@ import DiseaseDetection from "../components/DiseaseDetection";
 import SustainableFarming from "../components/SustainableFarming";
 import Welfare from "../components/Welfare";
 import WelfareSchemesPage from "../components/WelfareSchemesPage";
+import PesticideGuidePage from "../components/PesticideGuidePage";
 import Footer from "../components/Footer";
 import { User } from "lucide-react";
 
@@ -42,6 +43,10 @@ const AppRoutes = () => {
                 <Route
                     path="/disease-detection"
                     element={<DiseaseDetection />}
+                />
+                <Route
+                    path="/pesticide-guide"
+                    element={<PesticideGuidePage />}
                 />
                 <Route
                     path="/sustainable-farming/welfare-schemes"

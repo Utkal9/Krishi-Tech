@@ -14,6 +14,7 @@ import DiseaseDetection from "./components/DiseaseDetection";
 import SustainableFarming from "./components/SustainableFarming";
 import Welfare from "./components/Welfare";
 import WelfareSchemesPage from "./components/WelfareSchemesPage";
+import PesticideGuidePage from "./components/PesticideGuidePage";
 
 function AppContent() {
     const { currentUser, farmerProfile, loading } = useAuth();
@@ -64,6 +65,10 @@ function AppContent() {
             <Route
                 path="/sustainable-farming"
                 element={<SustainableFarming />}
+            />
+            <Route
+                path="/sustainable-farming/pesticide-guide"
+                element={<PesticideGuidePage />}
             />
 
             <Route

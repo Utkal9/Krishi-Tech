@@ -73,9 +73,13 @@ const AccordionCard: FC<CardProps> = ({
 const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
     const navigate = useNavigate();
 
-    const handleClick = () => {
+    const handleClick1 = () => {
+        navigate("/sustainable-farming/pesticide-guide");
+    };
+    const handleClick2 = () => {
         navigate("/sustainable-farming/welfare-schemes");
     };
+
     // Placeholder for loading state, similar to a data-driven component
     const [isLoading, setIsLoading] = useState(true);
 
@@ -206,8 +210,14 @@ const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
                         </div>
                         <div>
                             <button
+                                className="px-4 py-2 text-sm font-medium hover:text-green-600 bg-white rounded-lg border border-green-200 z-50 mr-3"
+                                onClick={handleClick1}
+                            >
+                                Pesticides
+                            </button>
+                            <button
                                 className="px-4 py-2 text-sm font-medium hover:text-green-600 bg-white rounded-lg border border-green-200 z-50"
-                                onClick={handleClick}
+                                onClick={handleClick2}
                             >
                                 Government Schemes
                             </button>
