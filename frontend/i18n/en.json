@@ -189,5 +189,8 @@
     },
     "cancel": "Cancel",
     "logout": "Logout",
-    "todays_farming_tips": "Today's Farming Tips"
+    "todays_farming_tips": "Today's Farming Tips",
+    "chatbot": {
+        "ask_prompt": "Ask Krishika"
+    }
 }

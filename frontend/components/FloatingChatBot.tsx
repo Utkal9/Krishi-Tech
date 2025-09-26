@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Camera, Leaf, Bot, User } from "lucide-react";
-
+import { useTranslation } from "react-i18next";
 interface Message {
     id: string;
     text: string;
@@ -11,6 +11,7 @@ interface Message {
 
 export const FloatingChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { t } = useTranslation();
     const [messages, setMessages] = useState<Message[]>([
         {
             id: "1",
@@ -136,10 +137,6 @@ export const FloatingChatBot = () => {
             <div className="fixed bottom-6 right-6 z-50">
                 {!isOpen && (
                     <div className="flex flex-col items-end space-y-2">
-                        {/* Get Support Text */}
-                        <div className="bg-white px-3 py-2 rounded-lg shadow-md border border-gray-200 text-sm text-gray-700 font-medium animate-pulse">
-                            Get Support
-                        </div>
                         {/* Chat Button */}
                         <button
                             onClick={() => setIsOpen(true)}
@@ -147,6 +144,10 @@ export const FloatingChatBot = () => {
                         >
                             <MessageCircle className="w-6 h-6" />
                         </button>
+                        {/* Krishika Label */}
+                        <span className="bg-white px-4 py-2 rounded-full shadow-lg border border-gray-200 text-gray-700 font-semibold text-sm">
+                            {t("chatbot.ask_prompt")}
+                        </span>
                     </div>
                 )}
             </div>

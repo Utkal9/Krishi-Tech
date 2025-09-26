@@ -175,5 +175,8 @@
         "weather_load_failed": "मौसम डेटा लोड करने में विफल",
         "tip_load_failed": "कृषि सुझाव लोड करने में विफल"
     },
-    "todays_farming_tips": "आज के कृषि सुझाव"
+    "todays_farming_tips": "आज के कृषि सुझाव",
+    "chatbot": {
+        "ask_prompt": "कृषिका से पूछें"
+    }
 }
