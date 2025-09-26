@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2">
                             <li>
                                 <a
-                                    href="#"
+                                    href="/soil-analysis"
                                     className="text-gray-300 hover:text-green-400 transition-colors text-sm"
                                 >
                                     {t("footer.soil_analysis")}
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/weather"
                                     className="text-gray-300 hover:text-green-400 transition-colors text-sm"
                                 >
                                     {t("footer.weather_forecast")}
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/crop-recommendation"
                                     className="text-gray-300 hover:text-green-400 transition-colors text-sm"
                                 >
                                     {t("footer.crop_recommendations")}
@@ -101,18 +101,10 @@ const Footer: React.FC = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/market-insights"
                                     className="text-gray-300 hover:text-green-400 transition-colors text-sm"
                                 >
                                     {t("footer.market_insights")}
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-gray-300 hover:text-green-400 transition-colors text-sm"
-                                >
-                                    {t("footer.expert_advice")}
                                 </a>
                             </li>
                         </ul>
@@ -180,7 +172,7 @@ const Footer: React.FC = () => {
                                         {t("footer.email")}
                                     </p>
                                     <p className="text-gray-400 text-sm">
-                                        support@cropwise.com
+                                        arjunmaurya9026@gmail.com
                                     </p>
                                 </div>
                             </div>
@@ -191,7 +183,7 @@ const Footer: React.FC = () => {
                                         {t("footer.phone")}
                                     </p>
                                     <p className="text-gray-400 text-sm">
-                                        +1 (555) 123-4567
+                                        +91-70542 67380
                                     </p>
                                 </div>
                             </div>
@@ -202,9 +194,9 @@ const Footer: React.FC = () => {
                                         {t("footer.address")}
                                     </p>
                                     <p className="text-gray-400 text-sm">
-                                        123 Agriculture Street
+                                        Lovely Professional University
                                         <br />
-                                        Farm City, FC 12345
+                                        Phagwara, Punjab
                                     </p>
                                 </div>
                             </div>
