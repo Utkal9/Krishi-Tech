@@ -209,7 +209,7 @@ const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
                                 className="px-4 py-2 text-sm font-medium hover:text-green-600 bg-white rounded-lg border border-green-200 z-50"
                                 onClick={handleClick}
                             >
-                                Welfare Schemes
+                                Government Schemes
                             </button>
                         </div>
                     </div>

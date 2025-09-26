@@ -85,7 +85,56 @@ const PlusIcon = () => (
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
     </svg>
 );
+const EmojiHappyIcon = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8 text-yellow-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
+    >
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+    </svg>
+);
 
+const CreditCardIcon = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8 text-purple-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
+    >
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+        />
+    </svg>
+);
+
+const DesktopComputerIcon = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8 text-indigo-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
+    >
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+    </svg>
+);
 interface SchemeInfo {
     title: string;
     imageSrc: string;
@@ -283,6 +332,83 @@ const Welfare: FC = () => {
                     "Improved decision-making power for women.",
                     "Investment in backyard farming, poultry, and dairy.",
                     "Greater access to agricultural training & SHGs.",
+                ],
+            },
+        },
+        {
+            title: "National Mission for Sustainable Agriculture",
+            imageSrc:
+                "https://image2.slideserve.com/5133475/national-mission-for-sustainable-agriculture-nmsa-operational-guidelines-l.jpg",
+            description:
+                "Promotes sustainable and climate-resilient farming practices to ensure long-term productivity.",
+            icon: <EmojiHappyIcon />,
+            features: {
+                title: "Mission Components",
+                color: "text-yellow-700",
+                points: [
+                    "Soil Health Management & organic farming.",
+                    "Rainfed Area Development.",
+                    "Climate Change Adaptation practices.",
+                ],
+            },
+            updates: {
+                title: "2025 Initiatives",
+                color: "text-yellow-700",
+                points: [
+                    "Use of drone technology for crop monitoring.",
+                    "Enhanced support for agri-tech startups.",
+                    "Expansion of bio-fertilizer production units.",
+                ],
+            },
+        },
+        {
+            title: "Kisan Credit Card (KCC)",
+            imageSrc:
+                "https://edistrictportal.com/wp-content/uploads/2024/10/feature-image-6.jpg",
+            description:
+                "Provides timely and affordable credit to farmers for their cultivation and other agricultural needs.",
+            icon: <CreditCardIcon />,
+            features: {
+                title: "Purpose",
+                color: "text-purple-700",
+                points: [
+                    "Short-term credit for crop production.",
+                    "Simplified loan disbursement process.",
+                    "Flexible repayment terms for farmers.",
+                ],
+            },
+            updates: {
+                title: "2025 Enhancements",
+                color: "text-purple-700",
+                points: [
+                    "Integration with digital banking & mobile apps.",
+                    "Expanded eligibility for fisheries & animal husbandry.",
+                    "Collateral-free loans up to ₹1.6 lakhs.",
+                ],
+            },
+        },
+        {
+            title: "Electronic-National Agriculture Market",
+            imageSrc: "https://enam.gov.in/web/Slider_gallary/1/img_12.jpg",
+            description:
+                "An online trading platform creating a unified national market for agricultural commodities for better price discovery.",
+            icon: <DesktopComputerIcon />,
+            features: {
+                title: "Platform Benefits",
+                color: "text-indigo-700",
+                points: [
+                    "Online trading for better price discovery.",
+                    "Transparent bidding system across APMC markets.",
+                    "Integration with logistics and warehousing.",
+                ],
+            },
+            updates: {
+                title: "2025 Upgrades",
+                color: "text-indigo-700",
+                points: [
+                    "Expansion to 2,000+ mandis nationwide.",
+                    "AI-driven price forecasting tools.",
+                    "Direct transaction support for FPOs.",
                 ],
             },
         },
