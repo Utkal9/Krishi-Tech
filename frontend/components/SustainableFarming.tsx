@@ -74,7 +74,7 @@ const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/sustainable-farming/welfare-schemes');
+        navigate("/sustainable-farming/welfare-schemes");
     };
     // Placeholder for loading state, similar to a data-driven component
     const [isLoading, setIsLoading] = useState(true);
@@ -204,11 +204,14 @@ const SustainableFarming: FC<{ onBack?: () => void }> = ({ onBack }) => {
                                 </p>
                             </div>
                         </div>
-                    <div>
-                        <button className="p-2 rounded-xl text-white bg-green-400" onClick={handleClick}>
-                            <p>Welfare Schemes</p>
-                        </button>
-                    </div>
+                        <div>
+                            <button
+                                className="px-4 py-2 text-sm font-medium hover:text-green-600 bg-white rounded-lg border border-green-200 z-50"
+                                onClick={handleClick}
+                            >
+                                Welfare Schemes
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,6 +12,7 @@ import CropRecommendation from "./components/CropRecommendation";
 import MarketInsights from "./components/MarketInsights";
 import DiseaseDetection from "./components/DiseaseDetection";
 import SustainableFarming from "./components/SustainableFarming";
+import Welfare from "./components/Welfare";
 
 function AppContent() {
     const { currentUser, farmerProfile, loading } = useAuth();
@@ -62,6 +63,10 @@ function AppContent() {
             <Route
                 path="/sustainable-farming"
                 element={<SustainableFarming />}
+            />
+            <Route
+                path="/sustainable-farming/welfare-schemes"
+                element={<Welfare />}
             />
             <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

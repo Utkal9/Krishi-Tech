@@ -138,7 +138,7 @@ const HomePage: React.FC = () => {
             color: "from-green-500 to-emerald-500",
             bgColor: "bg-green-50",
             iconColor: "text-green-600",
-            path: "/recommendations",
+            path: "/crop-recommendation",
         },
         {
             title: t("quick_actions.market_insights_title"),
