@@ -64,6 +64,11 @@ function AppContent() {
                 path="/sustainable-farming"
                 element={<SustainableFarming />}
             />
+
+            <Route
+                path="/sustainable-farming/welfare-schemes"
+                element={<Welfare />}
+            />
             <Route
                 path="/sustainable-farming/welfare-schemes"
                 element={<Welfare />}
